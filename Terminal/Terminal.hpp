@@ -2,6 +2,8 @@
 #define TERMINAL_TERMINAL_HPP
 #include <iostream>
 #include <stdlib.h>
+#include <string>
+#include "../Racun/Racun.cpp" // Pretpostavljamo da postoji klasa Racun
 using namespace std;
 
 class Terminal {
@@ -11,7 +13,8 @@ private:
     bool running; // Dodajemo bool da pratimo stanje terminala
 
     void meni(); // funkcija koja ispisuje meni
-    void run(); // funkcija koja pokrece terminal i obraduje korisnicki unos
+    
+    Racun * trenutniRacun; // pokazivac na trenutni racun, pretpostavljamo da postoji klasa Racun
 
 public:
     Terminal();
@@ -19,7 +22,7 @@ public:
 
     int getData() const; // getter data-e
     void setData(int value); // setter data-e
-
+    void run(); // funkcija koja pokrece terminal i obraduje korisnicki unos
     void clearScreen();
 };
 
