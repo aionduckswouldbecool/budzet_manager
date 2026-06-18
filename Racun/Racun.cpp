@@ -12,7 +12,7 @@ Racun::Racun(double stanjeNaRacunu) {
 }
 
 void Racun::prikaziStanje ( ) { 
-    cout << "Stanje na racunu " << ZiroBrojRacuna << " je: " << StanjeNaRacunu << endl;
+    cout << "Stanje na racunu " << ZiroBrojRacuna << " je: " << (double) StanjeNaRacunu << endl;
 }
 
 void Racun::dodajSredstva(double iznos) {

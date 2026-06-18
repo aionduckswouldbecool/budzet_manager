@@ -11,9 +11,9 @@ class Terminal {
 private:
     int data;
     bool running; // Dodajemo bool da pratimo stanje terminala
-
+    int choice; 
     void meni(); // funkcija koja ispisuje meni
-    
+    void opcije(); // ovde se nalazi dijalog da se ispisuje i uzimaju ulazi korisnika 
     Racun * trenutniRacun; // pokazivac na trenutni racun, pretpostavljamo da postoji klasa Racun
 
 public:
@@ -24,6 +24,10 @@ public:
     void setData(int value); // setter data-e
     void run(); // funkcija koja pokrece terminal i obraduje korisnicki unos
     void clearScreen();
+
+    // budzetiranje funkcije
+    
+    
 };
 
 #endif // TERMINAL_TERMINAL_HPP

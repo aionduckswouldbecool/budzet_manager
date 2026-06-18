@@ -35,6 +35,7 @@ void Terminal::meni() {
 
 }
 
+
 void Terminal::run() {
     int choice;
     running = true;
@@ -95,7 +96,7 @@ void Terminal::run() {
             this->clearScreen(); // Čistimo ekran nakon obrade korisničkog unosa
         } else{
             running = false; // Ako korisnik ne želi da nastavi, izlazimo iz petlje
-        }
     }
+            
 
 }
